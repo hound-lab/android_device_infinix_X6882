@@ -32,6 +32,12 @@ TARGET_OTA_ASSERT_DEVICE := X6882,decryptor
 # Platform
 TARGET_BOARD_PLATFORM := mt6789
 
+# Recovery
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6789
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_USERIMAGES_USE_F2FS := true
+
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
