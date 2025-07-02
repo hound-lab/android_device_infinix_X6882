@@ -12,5 +12,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek
 
+# Speed profile services and wifi-service to reduce RAM and storage.
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/infinix/X6882/X6882-vendor.mk)
