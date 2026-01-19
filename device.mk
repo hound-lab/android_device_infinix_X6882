@@ -99,5 +99,8 @@ PRODUCT_SOONG_NAMESPACES += \
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
+# Userdata
+PRODUCT_FS_COMPRESSION := 1
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/infinix/X6882/X6882-vendor.mk)
