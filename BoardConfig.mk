@@ -19,5 +19,15 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := decryptor
+TARGET_NO_BOOTLOADER := true
+
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := X6882,decryptor
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6789
+
 # Include the proprietary files BoardConfig.
 include vendor/infinix/X6882/BoardConfigVendor.mk
