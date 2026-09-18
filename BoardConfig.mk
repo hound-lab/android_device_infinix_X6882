@@ -29,5 +29,8 @@ TARGET_OTA_ASSERT_DEVICE := X6882,decryptor
 # Platform
 TARGET_BOARD_PLATFORM := mt6789
 
+# SEPolicy
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # Include the proprietary files BoardConfig.
 include vendor/infinix/X6882/BoardConfigVendor.mk
