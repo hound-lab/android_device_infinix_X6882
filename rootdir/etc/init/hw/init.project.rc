@@ -16,6 +16,10 @@ on init
     write /sys/kernel/tracing/events/block/block_rq_complete/enable 1
     write /sys/kernel/tracing/tracing_on 1
 
+    # Set gesture touch permissions
+    chown system system /proc/gesture_function
+    chmod 0660 /proc/gesture_function
+
 on post-fs-data
 
 #Camera
