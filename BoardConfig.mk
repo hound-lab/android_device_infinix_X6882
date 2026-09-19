@@ -140,6 +140,10 @@ TARGET_USERIMAGES_USE_F2FS := true
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
+# Vendor Security Patch
+BOOT_SECURITY_PATCH := $(VENDOR_SECURITY_PATCH)
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
